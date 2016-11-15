@@ -29,6 +29,6 @@ int main()
 	int i;
 	srand(time(NULL));
 	createArray(a, N);
-	turnArray (a, N);//а где сдвиг влево?
+	turnArray (a, N);
 	system("pause");
 }
