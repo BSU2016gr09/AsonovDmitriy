@@ -5,9 +5,9 @@ using namespace std;
 
 int **InitArray(int N, int M)
 {
-	int **arr = new int*[N];
+	int **arr = new int*[N];//плохо. Где проверка????
 	for (int i = 0; i<N; i++)
-		arr[i] = new int[M];
+		arr[i] = new int[M];//плохо. Где проверка????
 			for (int i = 0; i<N; i++)
 				for (int j = 0; j<M; j++)
 					arr[i][j] = rand() % 8 + 1;
@@ -44,7 +44,7 @@ void SortMatrix(int **arr, int N, int M)
 			if (arr[i][M - 1] > arr[i + 1][M - 1]) 
 			{
 				for (int j = 0; j < M; j++)
-					swap(arr[i][j], arr[i + 1][j]);
+					swap(arr[i][j], arr[i + 1][j]);//ПЛОХО СОВСЕМ. В задании надо "переставлиить строки". Для этого и есть у нас указате
 				tmp = 1;
 			}
 		}
