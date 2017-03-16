@@ -6,7 +6,7 @@ void initArray(int* arr, int N)//функция инициализации ма�
 { 
 	for (int j = 0; j < N; j++) 
 	{
-		arr[j] = rand() % N;
+		arr[j] = rand() % N; //А где работа с указателями?????
 	}
 }
 void giveMemory(int* &arr, int N)
@@ -26,7 +26,7 @@ void printPoints(int* x, int*y, int N)  //функция вывода точек
 {	
 	for (int i = 0; i < N; i++) 
 	{
-		cout << "(" << x[i] << " , " << y[i] << "),";
+		cout << "(" << x[i] << " , " << y[i] << "),"; //А где работа с указателями?????
 	}
 	cout << "\n";
 }
@@ -34,7 +34,7 @@ void initDistance(int* distance, int* x, int* y, int N, int a, int b, int c)  //
 {	
 	for (int i = 0; i < N; i++) 
 	{
-		distance[i] = calculateDistance(x[i], y[i], a, b, c);
+		distance[i] = calculateDistance(x[i], y[i], a, b, c); //А где работа с указателями?????
 	}
 }
 void sortPoints(int* distance, int* x, int* y, int N)  //функция сортировки точек по условию
@@ -80,6 +80,6 @@ int main()
 	cout << "Точки после сортировки:";
 	printPoints(x, y, N);
 	delete[] distance; delete[] x; delete[] y;
-	distance = nullptr; x = nullptr; y = nullptr;
+	distance = nullptr; x = nullptr; y = nullptr;//тут молодец!
 	system("pause");
 }
