@@ -5,7 +5,7 @@ using namespace std;
 void initArray(int* arr, int N) { //функция инициализации массива случайными числами
 
 	for (int j = 0; j < N; j++) {
-		arr[j] = rand() % N;
+		arr[j] = rand() % N;//А где работа с указателями?????
 	}
 }
 
@@ -14,7 +14,7 @@ void printArray(int* arr, int N)  //функция вывода массива
 	
 	for (int j = 0; j < N; j++) 
 	{
-		cout << arr[j] << " ";
+		cout << arr[j] << " ";//А где работа с указателями?????
 	}
 	cout << "\n";
 }
@@ -22,7 +22,7 @@ void sortArray(int*arr, int N, int k) //сортировка массива на
 { 
 	for (int i = k - 1;i < N - 1; i++)
 	 {for (int j = k - 1; j < N - 1; j++)
-		{if (arr[j] > arr[j + 1]) swap(arr[j], arr[j + 1]);}
+		{if (arr[j] > arr[j + 1]) swap(arr[j], arr[j + 1]);}//А где работа с указателями?????
 	 }
 }
 
